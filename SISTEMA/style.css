@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f7f7;
+}
+main{
+    width: 25%;
+    margin: auto;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+  }
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+    color: #2e75cc;
+  }
+h2{
+    margin: 20px 0;
+    font-size: 39px;
+    width: 100%;
+    
+}
+h4{
+    margin: 0;
+}
+.box{
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);;
+    display: flex;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px;
+}
+.income{
+    margin: 0;
+    border-right: 1px solid #dedede;
+}
+#money-minus{
+    margin: 5px;
+    font-size: 20px;
+    color: #c0392b;
+    text-align: center;
+}
+
+#money-plus{
+    margin: 5px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+}
+.form-list {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100px;
+}
+.transaction {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+}
+.date-transaction {
+    margin: 10px 5px 10px 10px;
+    color: rgb(207, 203, 203);
+}
+.name-transaction {
+    margin: 10px 0;
+    margin-left: 5px;
+}
+.value-transaction {
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: 5px;
+}
+.type-transaction {
+    width: 5%;
+    height: 100%;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.income-value {
+    color: rgb(28, 151, 28);
+}
+.tipo-receita {
+    background-color: rgb(28, 151, 28);
+}
+.expense-value {
+    color: red;
+}
+.tipo-despesa {
+    background-color: #bd3838;
+}
+.form-control {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+}
+.form-subtitle {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 5px;
+}
+.input-transaction {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-size: 15px;
+    border: 0 none;
+    height: 30px;
+    padding: 5px 7.5px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 7px 0;
+}
+#input-ensemble {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#amount-value {
+    border-radius: 0 5px 5px 0;
+    height: auto;
+}
+#icon-transaction {
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+#button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: rgb(6, 6, 204);
+}
+
+.button-center {
+    margin: 50% 5px;
+}
+
+@media only screen and (max-width: 960px) {
+    main{
+        width: 80%;
+
+    }
+    .box{
+        padding: 10px;
+    }
+    .income{
+        justify-content: center;
+        margin-right: 30px;
+    }
+  }
+
+.date-options {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+}
+
+#input-date {
+    display: none;
+}
+
+.bi-trash {
+    margin: auto 0;
+    margin-left: 5px;
+}
+
+.bi-trash:hover {
+    cursor: pointer;
+    color: #bd3838;
+}

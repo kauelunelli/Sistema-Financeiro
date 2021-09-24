@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema</title>
+</head>
+
+<body>
+    <main>
+        <h2>Controle De Despesas</h2>
+        <div class="container">
+            <h4>SALDO ATUAL</h4>
+            <h1 id=balance>R$ 0.00</h1>
+            <div class="box">
+                <div id="income">
+                    <h4>RECEITAS</h4>
+                    <p id="money-plus"> 0.00</p>
+                </div>
+                <hr width="1" size="50">
+                <div id="expenses">
+                    <h4> DESPESAS</h4>
+                    <p id="money-minus"> 0.00</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="form-title">Transações</h2>
+        <div id="form-list" class="form-list"> 
+        </div>
+        </div>
+        <h2 class="form-title">Adicionar Transação</h2>
+        <div class="form-control">
+            <p class="form-subtitle">Nome</p>
+            <input id="input-name" class="input-transaction" type="text" placeholder="Nome" max="15">
+            <p class="form-subtitle">Valor</p>
+            <div id="input-ensemble">
+                <div id="icon-transaction" type="income">
+                    <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-plus-circle income-value button-center" viewBox="0 0 16 16"
+                        style="display: initial;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                    <svg id="icon-expense" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-dash-circle expense-value button-center" viewBox="0 0 16 16"
+                        style="display: none;">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="form-subtitle input-currency button-center">R$</p>
+                </div>
+                <input type="number" id="amount-value" class="input-transaction" placeholder="Valor da Receita"
+                    max="25">
+            </div>
+            <p class="form-subtitle">Data</p>
+            <input type="date" class="input-transaction" style="display: none;">
+            <div class="date-options">
+                <div class="date-option">
+                    <input type="radio" name="date-select" id="date-manual" class="date-radio">
+                    <label for="">Inserir Data</label>
+                </div>
+                <div class="date-option">
+                    <input type="radio" name="date-select" id="date-automatic" class="date-radio" checked>
+                    <label for="">Data Automática</label>
+                </div>
+            </div>
+            <input type="date" class="input-transaction" id="input-date">
+
+            <button id="button">Adicionar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
